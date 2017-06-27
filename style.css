@@ -1,0 +1,182 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('houses.jpg');
+	background-color: #cdba9a;
+	font-family: 'Fondamento', cursive;
+}
+
+.headers {
+	margin: 20px auto;
+	display: block;
+	width: 85%;
+	max-width: 900px;
+}
+
+header {
+	padding: 80px;
+	padding-bottom: 40px;
+}
+
+li {
+	padding: 15px;
+	font-size: 25px;
+	width: 100%;
+}
+
+.scroll {
+	background-image: url('paper.jpg');
+	width: 60%;
+	max-width: 1200px;
+	margin: 0px auto;
+	margin-bottom: 150px;
+	padding: 85px;
+	font-size: 20px;
+	border-radius: .5%
+}
+
+#first-scroll h2 {
+	width: 100%;
+}
+
+button {
+	height: 60px;
+	width: 150px;
+	border-radius: 10%;
+	font-family: 'Fondamento', cursive;
+	font-size: 20px;
+	background-color: #983333;
+	color: white;
+	margin: 10px 0px;
+}
+
+button:hover {
+	background-color: #752626;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.spoilers {
+	color: #ea3324;
+	font-weight: bold;
+}
+
+#question {
+	text-align: center;
+	font-size: 1.5em;
+
+}
+
+.answer {
+	font-size: 1.5em;
+	margin: 20px 0px;
+	padding: 10px 20px;
+	color: black;
+	-webkit-box-shadow: 0px 0px 10px 4px #4d0000;
+        box-shadow: 0px 0px 10px 4px #4d0000;
+}
+
+.answer:hover {
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 10px 4px #145dd1;
+        box-shadow: 0px 0px 10px 4px #145dd1;
+}
+
+#next-button {
+	width: 190px;
+	height: 42px;
+}
+
+.last-header {
+	text-align: center;
+	width: 100%;
+	font-size: 35px;
+	color: #983333;
+}
+
+#user-review {
+	margin: 1px;
+	font-size: 30px;
+}
+
+#gif-box {
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.gif {
+	width: 75%;
+}
+
+footer {
+	font-size: 30px;
+	width: 100%;
+	margin: auto;
+}
+
+
+.selected {
+	-webkit-box-shadow: 0px 0px 10px 4px #011099;
+        box-shadow: 0px 0px 10px 4px #011099;
+}
+.correct {
+	-webkit-box-shadow: 0px 0px 10px 4px #097220;
+        box-shadow: 0px 0px 10px 4px #097220;
+}
+
+.incorrect{
+-webkit-box-shadow: 0px 0px 10px 4px #e60000;
+        box-shadow: 0px 0px 10px 4px #e60000;
+}
+
+#correctAlert {
+	color: #097220;
+}
+
+#incorrectAlert {
+	color: #e60000;
+}
+
+#correctAlert, #incorrectAlert {
+	font-size: 50px;
+	font-style: italic;
+	text-align: center;
+}
+
+#game-over {
+	font-size: 40px;
+}
+
+#final-score {
+	font-size: 30px;
+}
+
+#no-answer-alert {
+	font-style: italic;
+	color: #e60000;
+}
+
+@media (max-width: 650px) {
+	.scroll {
+		width: 80%;
+		padding: 30px;
+		font-size: 15px;
+	}
+	li {
+	font-size: 20px;
+	}
+
+	#next-button {
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+
+
+

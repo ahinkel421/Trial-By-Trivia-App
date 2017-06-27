@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Trial by Trivia</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fondamento" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="Trial-by-Trivia" content="A Game of Thrones Quiz App">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header>
+		<img class= "headers" src="https://fontmeme.com/permalink/170619/38fd9eb1b7214fbc2d11481bd7e2645e.png" alt="game-of-thrones-font" border="0">
+		<img class= "headers" src="https://fontmeme.com/permalink/170619/9c7849c784b650f8ce65625e1de7b086.png" alt="game-of-thrones-font" border="0">
+	</header>
+
+	<main>
+		<div class="scroll" id="first-scroll">
+			<h2>Welcome to Trial by Trivia! Just a few quick things before we get started: </h2>
+			<ol class="warnings">
+				<li><span class="spoilers">[SPOILERS AHEAD]</span> Do not proceed unless you are fully caught up through Season 6 of Game of Thrones.</li>
+				<li>The content in this quiz pertains of the TV show “Game of Thrones,” not the book series “A Song of Ice and Fire.” </li>
+				<li>You only get ONE CHANCE to answer each question. So choose wisely.</li>
+			</ol>
+			<h2 class="scroll-footer">And now your watch begins. . . Click the button below when you're ready to begin. Good luck!</h2>
+			<button id="begin-button">Begin Quiz</button>
+		</div>
+		<div class="scroll hidden" id="second-scroll">
+			<h2 id="question"></h2>
+			<div class="answer" id="answer-0"></div>
+			<div class="answer" id="answer-1"></div>
+			<div class="answer" id="answer-2"></div>
+			<div class="answer" id="answer-3"></div>
+			<button id="next-button">Submit Answer</button>
+			<footer class="hidden answer-feedback " id="correctAlert">Correct!</footer>
+			<footer class="hidden answer-feedback" id="incorrectAlert">Incorrect</footer>
+			<footer class="hidden" id="no-answer-alert">*Please select an answer</footer>
+		</div>
+		<div class="scroll hidden" id="third-scroll">
+			<h2 class="last-header" id="game-over">And now your watch is ended. . .</h2>
+			<h2 class="last-header" id="final-score">Final Score: <span id="user-score"></span>/10</h2>
+			<h3 id="user-review"></h3>
+			<div id="gif-box"></div>
+			<footer>If you'd like to play again, you can click the button below to restart the quiz. Otherwise, thanks for playing!</footer>
+			<button id="play-again">Play Again</button>
+		</div>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
