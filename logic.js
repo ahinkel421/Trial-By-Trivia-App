@@ -220,6 +220,7 @@ var questionsAndAnswers = [
 	function showNext() { 
 		state.currentQuestionIndex++;
 		state.currentSelectedAnswer = -1;
+		$('#countdown-1').addClass('hidden');
 		if (state.currentQuestionIndex === 11) {
 			$(SECOND_SCROLL).addClass('hidden');
 			$(THIRD_SCROLL).removeClass('hidden');
@@ -228,6 +229,22 @@ var questionsAndAnswers = [
 		state.disabled = false;
 		displayQuestion(state.currentQuestionIndex);
 		turn.play();
+	}
+
+	//Counts down so that the user knows when the next quesiton 
+	//will be displayed.
+	function handleFirstCountdown() {
+		$('#countdown-3').removeClass('hidden');
+	}
+
+	function handleSecondCountdown() {
+		$('#countdown-3').addClass('hidden');
+		$('#countdown-2').removeClass('hidden');
+	}
+
+	function handleThirdCountdown() {
+		$('#countdown-2').addClass('hidden');
+		$('#countdown-1').removeClass('hidden');
 	}
 
 	// When the document is ready, the following events will occur.
@@ -252,7 +269,11 @@ var questionsAndAnswers = [
 				if(!state.disabled) {
 					state.disabled = true;
 					displayFeedback();
-					setTimeout(showNext, 2000);
+					handleFirstCountdown();
+					setTimeout(handleSecondCountdown, 1000);
+					setTimeout(handleThirdCountdown, 2000);
+					setTimeout(showNext, 3000);
+
 				}
 			}
 		

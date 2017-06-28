@@ -161,6 +161,15 @@ footer {
 	color: #e60000;
 }
 
+
+
+#countdown-1, #countdown-2, #countdown-3 {
+	font-style: italic;
+	font-size: 30px;
+	color: #605f5f;
+	text-align: center;
+}
+
 @media (max-width: 650px) {
 	.scroll {
 		width: 80%;
