@@ -7,14 +7,6 @@ body {
 	background-color: #cdba9a;
 	font-family: 'Fondamento', cursive;
 }
-
-.headers {
-	margin: 20px auto;
-	display: block;
-	width: 95%;
-	max-width: 900px;
-}
-
 header {
 	padding: 80px;
 	padding-bottom: 40px;
@@ -24,6 +16,35 @@ li {
 	padding: 15px;
 	font-size: 25px;
 	width: 100%;
+}
+
+button {
+	height: 60px;
+	width: 150px;
+	border-radius: 10%;
+	font-family: 'Fondamento', cursive;
+	font-size: 20px;
+	background-color: #983333;
+	color: white;
+	margin: 10px 0px;
+}
+
+footer {
+	font-size: 30px;
+	width: 100%;
+	margin: auto;
+}
+
+button:hover {
+	background-color: #752626;
+	cursor: pointer;
+}
+
+.headers {
+	margin: 20px auto;
+	display: block;
+	width: 95%;
+	max-width: 900px;
 }
 
 .scroll {
@@ -39,22 +60,6 @@ li {
 
 #first-scroll h2 {
 	width: 100%;
-}
-
-button {
-	height: 60px;
-	width: 150px;
-	border-radius: 10%;
-	font-family: 'Fondamento', cursive;
-	font-size: 20px;
-	background-color: #983333;
-	color: white;
-	margin: 10px 0px;
-}
-
-button:hover {
-	background-color: #752626;
-	cursor: pointer;
 }
 
 .hidden {
@@ -78,13 +83,13 @@ button:hover {
 	padding: 10px 20px;
 	color: black;
 	-webkit-box-shadow: 0px 0px 10px 4px #4d0000;
-        box-shadow: 0px 0px 10px 4px #4d0000;
+	box-shadow: 0px 0px 10px 4px #4d0000;
 }
 
 .answer:hover {
 	cursor: pointer;
 	-webkit-box-shadow: 0px 0px 10px 4px #145dd1;
-        box-shadow: 0px 0px 10px 4px #145dd1;
+	box-shadow: 0px 0px 10px 4px #145dd1;
 }
 
 #next-button {
@@ -113,25 +118,18 @@ button:hover {
 	width: 75%;
 }
 
-footer {
-	font-size: 30px;
-	width: 100%;
-	margin: auto;
-}
-
-
 .selected {
 	-webkit-box-shadow: 0px 0px 10px 4px #011099;
-        box-shadow: 0px 0px 10px 4px #011099;
+	box-shadow: 0px 0px 10px 4px #011099;
 }
 .correct {
 	-webkit-box-shadow: 0px 0px 10px 4px #097220;
-        box-shadow: 0px 0px 10px 4px #097220;
+	box-shadow: 0px 0px 10px 4px #097220;
 }
 
 .incorrect{
--webkit-box-shadow: 0px 0px 10px 4px #e60000;
-        box-shadow: 0px 0px 10px 4px #e60000;
+	-webkit-box-shadow: 0px 0px 10px 4px #e60000;
+	box-shadow: 0px 0px 10px 4px #e60000;
 }
 
 #correctAlert {
@@ -161,9 +159,7 @@ footer {
 	color: #e60000;
 }
 
-
-
-#countdown-1, #countdown-2, #countdown-3 {
+#countdown{
 	font-style: italic;
 	font-size: 30px;
 	color: #605f5f;
@@ -171,22 +167,22 @@ footer {
 }
 
 @media (max-width: 650px) {
+	header {
+		padding: 15px;
+	}
+	li {
+		font-size: 20px;
+	}
 	.scroll {
 		width: 80%;
 		padding: 30px;
 		font-size: 15px;
 	}
-	li {
-	font-size: 20px;
-	}
+
 
 	#next-button {
 		margin: 0 auto;
 		display: block;
-	}
-	
-	header {
-		padding: 15px;
 	}
 }
 
