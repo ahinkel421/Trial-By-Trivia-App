@@ -162,19 +162,19 @@ function renderResults() {
 	$(SCORE).text(state.usersCurrentScore);
 	if (state.usersCurrentScore < 4) {
 		$(REVIEW).text('Yikes! You may need to go back and watch the show again...');
-		$(GIF_BOX).prepend('<img class="gif" src="ygritte.gif">');
+		$(GIF_BOX).prepend('<img class="gif" src="images/ygritte.gif">');
 	}
 	else if (state.usersCurrentScore < 7) {
 		$(REVIEW).text('Not bad, but in the game of thrones you either win, or you die…');
-		$(GIF_BOX).prepend('<img class="gif" src="cersei.gif">');
+		$(GIF_BOX).prepend('<img class="gif" src="images/cersei.gif">');
 	}
 	else if (state.usersCurrentScore < 10) {
 		$(REVIEW).text('Nice job! You certainly know your stuff. You win a nice pork sausage, courtesy of Theon Greyjoy…');
-		$(GIF_BOX).prepend('<img class="gif" src="ramsay.gif">');
+		$(GIF_BOX).prepend('<img class="gif" src="images/ramsay.gif">');
 	}
 	else if (state.usersCurrentScore >= 10) {
 		$(REVIEW).text('HODOR! Perfect score! You must be some kind of warg with a score like that.');
-		$(GIF_BOX).prepend('<img class="gif" src="bran.gif">');
+		$(GIF_BOX).prepend('<img class="gif" src="images/bran.gif">');
 	}
 	pageSound.play();
 }

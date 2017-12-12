@@ -3,7 +3,7 @@
 }
 
 body {
-	background-image: url('houses.jpg');
+	background-image: url('images/houses.jpg');
 	background-color: #cdba9a;
 	font-family: 'Fondamento', cursive;
 }
@@ -48,7 +48,7 @@ button:hover {
 }
 
 .scroll {
-	background-image: url('paper.jpg');
+	background-image: url('images/paper.jpg');
 	width: 60%;
 	max-width: 1200px;
 	margin: 0px auto;
