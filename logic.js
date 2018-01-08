@@ -1,6 +1,6 @@
 // Page turning sound effect
 var pageSound = new Audio();
-pageSound.src = "turn.mp3"
+pageSound.src = "turn.mp3";
 
 var BEGIN_QUIZ_BUTTON = '#begin-button';
 var FIRST_SCROLL = '#first-scroll';
@@ -147,7 +147,7 @@ function displayQuestion(index) {
 	var currentQuestion = questionsAndAnswers[index].question;
 	var answers = questionsAndAnswers[index].answers;
 	var questionPrefix = '';
-	if (index < 10) { // If bonus.
+	if (index < 10) { 
 		questionPrefix = '(' + (index + 1) + "/10) "
 	}
 	$(QUESTION_BOX).text(questionPrefix+currentQuestion);
